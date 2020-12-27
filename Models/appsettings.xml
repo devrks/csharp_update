@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+  <ArchiveOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SourceFolder />
+    <TargetFolder />
+    <CompressingLevel>5</CompressingLevel>
+  </ArchiveOptions>
+  <CryptingOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Password>Passw0rd</Password>
+  </CryptingOptions>
+</Settings>

@@ -1,0 +1,40 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ArchiveOptions" nillable="true" type="ArchiveOptions" />
+        <xs:element name="CryptingOptions" nillable="true" type="CryptingOptions" />
+        <xs:complexType name="ArchiveOptions">
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="SourceFolder" type="xs:string" />
+            <xs:element minOccurs="0" maxOccurs="1" name="TargetFolder" type="xs:string" />
+            <xs:element minOccurs="1" maxOccurs="1" name="CompressingLevel" type="CompressionLevel" />
+          </xs:sequence>
+        </xs:complexType>
+        <xs:complexType name="CryptingOptions">
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" name="Password" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+        <xs:simpleType name="CompressionLevel">
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="None" />
+            <xs:enumeration value="Level0" />
+            <xs:enumeration value="BestSpeed" />
+            <xs:enumeration value="Level1" />
+            <xs:enumeration value="Level2" />
+            <xs:enumeration value="Level3" />
+            <xs:enumeration value="Level4" />
+            <xs:enumeration value="Level5" />
+            <xs:enumeration value="Default" />
+            <xs:enumeration value="Level6" />
+            <xs:enumeration value="Level7" />
+            <xs:enumeration value="Level8" />
+            <xs:enumeration value="BestCompression" />
+            <xs:enumeration value="Level9" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
