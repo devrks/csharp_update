@@ -8,4 +8,13 @@
   <CryptingOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <Password>Passw0rd</Password>
   </CryptingOptions>
+  <DbConnectionOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <ConnectionString>...</ConnectionString>
+  </DbConnectionOptions>
+  <FtpOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <FtpAddress>...</FtpAddress>
+    <Login>Login</Login>
+    <Password>Passw0rd</Password>
+    <UseSSL>false</UseSSL>
+  </FtpOptions>
 </Settings>
